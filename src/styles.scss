@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body,
+app-root{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, #35218e, #511355);
+
+
+  *{
+      margin: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      
+    }
+    
+}
+.mat-typography p{
+  margin: 0;
+}
+
+input:focus{
+  outline: none;
+}

@@ -1,0 +1,63 @@
+<div class="todo-container">
+  <div class="todo-background">
+    
+    <img class="todo-background-img" src="https://www.innersloth.com/wp-content/uploads/2022/10/AUVR_Internal-1.png">
+    <div class="todo-background-overlay"></div>
+  </div>
+
+  <div class="todo-header">
+    <span class="todo-header-text-container">
+      <h1 class="todo-header-text">T O D O</h1>
+    </span>
+    <span class="todo-header-icon-container">
+      <mat-icon class="todo-header-icon">wb_sunny</mat-icon>
+    </span>
+  </div>
+
+  <div class="todo-new-item-container">
+    <label class="container">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <!-- <p style="margin: 0;">test</p> -->
+    <input 
+      class="todo-input"
+      placeholder="Create a new todo..."
+      >
+  </div>
+
+  <div class="todo-items-container">  
+    <div 
+      class="todo-item"
+      *ngFor = "let item of items">
+      
+      <label class="container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <span class="todo-task-close-space">
+        <span class="todo-new-todo">
+          <p style="margin: 0;">
+            {{ item.value }}
+          </p>
+        </span>
+        <mat-icon class="todo-close-icon"> close </mat-icon>
+      </span>
+    </div>
+    <div class="todo-items-container-footer">
+      <span><p>6 items left</p></span>
+      <span><p>Clear Completed</p></span>
+    </div>
+  </div>
+
+  <div class="todo-selection-container">
+    <span class="todo-selection-text"><p>All</p></span>
+    <span class="todo-selection-text"><p>Active</p></span>
+    <span class="todo-selection-text"><p>Completed</p></span>
+  </div>
+
+  <div class="todo-footer-container">
+    <span class="todo-footer-text"><p>Drag and drop to reorder list</p></span>
+  </div>
+</div>
